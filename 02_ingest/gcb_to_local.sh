@@ -11,7 +11,7 @@ FROM=gs://$BUCKET/flights/raw
 CMD="pwd"
 echo "mkdir data"
 echo "cd data"
-echo $(CMD)
+echo $ $(CMD)
 
 CMD="gsutil cp ${FROM} $(CMD)"
 echo $CMD
