@@ -13,6 +13,6 @@ mkdir data;
 cd data;
 
 DEST="${TO}/data"
-CMD="gsutil cp ${FROM} ${DEST}"
+CMD="gsutil cp -r ${FROM} ${DEST}"
 echo $CMD
 $CMD
