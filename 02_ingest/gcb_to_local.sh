@@ -10,9 +10,10 @@ BUCKET=gcp-practice-bucket
 FROM=gs://$BUCKET/flights/raw
 TO=$1
 
-echo "mkdir data"
-echo "cd data"
+mkdir data;
+cd data;
+
 DEST="${TO}/data"
 CMD="gsutil cp ${FROM} ${DEST}"
 echo $CMD
-
+$CMD
