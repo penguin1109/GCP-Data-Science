@@ -5,8 +5,7 @@ if [ "$#" -ne 1 ]; then
     exit
 fi
 
-
-BUCKET=gcp-practice-bucket
+BUCKET=gcp-bucket-practice
 FROM=gs://$BUCKET/flights/raw
 TO=$1
 
